@@ -1,0 +1,1 @@
+INSERT INTO PROVIDER_INFO(NAME, STATE, ADDRESS) VALUES('Fornecedor-GO', 'GO', 'Endereço fornecedor de Goias');
