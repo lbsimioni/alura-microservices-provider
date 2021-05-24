@@ -5,5 +5,5 @@ import lombok.Data;
 @Data
 public class ReservationDTO {
     private Integer id;
-    private Integer preparationTIme;
+    private Integer preparationTime;
 }
