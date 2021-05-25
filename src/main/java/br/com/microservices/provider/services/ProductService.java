@@ -13,7 +13,7 @@ import java.util.List;
 public class ProductService {
 
     @Autowired
-    private ProductRepository repository;
+    private final ProductRepository repository;
 
     public List<Product> getProductsByState(final String state) {
         return repository.findByStateIgnoringCase(state);
