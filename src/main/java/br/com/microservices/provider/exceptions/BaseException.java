@@ -13,7 +13,7 @@ public abstract class BaseException extends RuntimeException {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss")
     private final LocalDateTime timestamp;
 
-    protected BaseException(String msg, HttpStatus status) {
+    protected BaseException(final String msg, final HttpStatus status) {
         super(msg);
         this.status = status;
         this.timestamp = LocalDateTime.now();

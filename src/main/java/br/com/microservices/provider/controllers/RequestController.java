@@ -26,7 +26,7 @@ public class RequestController {
     private final RequestService requestService;
 
     @PostMapping
-    public ResponseEntity<Request> realizeRequest(@RequestBody List<RequestItemDTO> items) {
+    public ResponseEntity<Request> realizeRequest(@RequestBody final List<RequestItemDTO> items) {
         log.info("Creating request for items: {}", items);
         var request = requestService.realizeRequest(items);
         log.info("Created request {}", request);

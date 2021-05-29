@@ -21,7 +21,7 @@ public class InfoController {
     private final InfoService infoService;
 
     @GetMapping("/{state}")
-    public ResponseEntity<ProviderInfo> getInfoByState(@PathVariable String state) {
+    public ResponseEntity<ProviderInfo> getInfoByState(@PathVariable final String state) {
         log.info("Getting info for state: {}", state);
         var info = infoService.getInfoByState(state);
         log.info("Gatted information: {}", info);

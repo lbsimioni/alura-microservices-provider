@@ -7,7 +7,7 @@ public class ResourceNotFoundException extends BaseException {
         this("Resource not found");
     }
 
-    public ResourceNotFoundException(String msg) {
+    public ResourceNotFoundException(final String msg) {
         super(msg, HttpStatus.NOT_FOUND);
     }
 }
