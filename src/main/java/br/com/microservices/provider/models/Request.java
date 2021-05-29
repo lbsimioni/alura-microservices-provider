@@ -21,7 +21,7 @@ public class Request {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer preparationTIme;
+    private Integer preparationTime;
 
     @Enumerated(EnumType.STRING)
     private RequestStatus status;

@@ -4,6 +4,7 @@ import br.com.microservices.provider.dtos.RequestItemDTO;
 import br.com.microservices.provider.models.Request;
 import br.com.microservices.provider.services.RequestService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/requests")
 @AllArgsConstructor
+@Slf4j
 public class RequestController {
 
     @Autowired
@@ -25,11 +27,17 @@ public class RequestController {
 
     @PostMapping
     public ResponseEntity<Request> realizeRequest(@RequestBody List<RequestItemDTO> items) {
-        return ResponseEntity.ok(requestService.realizeRequest(items));
+        log.info("Creating request for items: {}", items);
+        var request = requestService.realizeRequest(items);
+        log.info("Created request {}", request);
+        return ResponseEntity.ok(request);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Request> getRequestById(@PathVariable final Long id) {
-        return ResponseEntity.ok(requestService.getRequestById(id));
+        log.info("Getting request with id: {}", id);
+        var request = requestService.getRequestById(id);
+        log.info("Getted request: {}", request);
+        return ResponseEntity.ok(request);
     }
 }
