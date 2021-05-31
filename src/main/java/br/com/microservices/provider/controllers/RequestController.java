@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 
@@ -26,11 +27,16 @@ public class RequestController {
     private final RequestService requestService;
 
     @PostMapping
-    public ResponseEntity<Request> realizeRequest(@RequestBody final List<RequestItemDTO> items) {
+    public ResponseEntity<Request> realizeRequest(
+            @RequestBody final List<RequestItemDTO> items,
+            UriComponentsBuilder uriBuilder) {
         log.info("Creating request for items: {}", items);
         var request = requestService.realizeRequest(items);
         log.info("Created request {}", request);
-        return ResponseEntity.ok(request);
+
+        var uri = uriBuilder.path("/requests/{id}").buildAndExpand(request.getId()).toUri();
+
+        return ResponseEntity.created(uri).body(request);
     }
 
     @GetMapping("/{id}")
