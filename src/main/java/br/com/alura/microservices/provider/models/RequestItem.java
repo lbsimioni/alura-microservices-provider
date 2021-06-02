@@ -1,4 +1,4 @@
-package br.com.microservices.provider.models;
+package br.com.alura.microservices.provider.models;
 
 import lombok.Data;
 
@@ -6,21 +6,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.math.BigDecimal;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Data
-public class Product {
+public class RequestItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private Integer amount;
 
-    private String state;
-
-    private String description;
-
-    private BigDecimal price;
+    @ManyToOne
+    @JoinColumn(name = "productId")
+    private Product product;
 }

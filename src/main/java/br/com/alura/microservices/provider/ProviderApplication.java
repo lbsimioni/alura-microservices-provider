@@ -1,4 +1,4 @@
-package br.com.microservices.provider;
+package br.com.alura.microservices.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,8 @@
-package br.com.microservices.provider.services;
+package br.com.alura.microservices.provider.services;
 
-import br.com.microservices.provider.exceptions.ResourceNotFoundException;
-import br.com.microservices.provider.models.ProviderInfo;
-import br.com.microservices.provider.repositories.InfoRepository;
+import br.com.alura.microservices.provider.exceptions.ResourceNotFoundException;
+import br.com.alura.microservices.provider.models.ProviderInfo;
+import br.com.alura.microservices.provider.repositories.InfoRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -8,7 +8,7 @@
 		<version>2.4.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.microservices.provider</groupId>
+	<groupId>br.com.alura.microservices</groupId>
 	<artifactId>provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>provider</name>

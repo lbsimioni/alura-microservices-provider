@@ -1,4 +1,4 @@
-package br.com.microservices.provider.exceptions;
+package br.com.alura.microservices.provider.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;

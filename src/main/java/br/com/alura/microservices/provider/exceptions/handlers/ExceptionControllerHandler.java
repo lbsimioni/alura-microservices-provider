@@ -1,6 +1,6 @@
-package br.com.microservices.provider.exceptions.handlers;
+package br.com.alura.microservices.provider.exceptions.handlers;
 
-import br.com.microservices.provider.exceptions.BaseException;
+import br.com.alura.microservices.provider.exceptions.BaseException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

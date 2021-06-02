@@ -1,6 +1,6 @@
-package br.com.microservices.provider.repositories;
+package br.com.alura.microservices.provider.repositories;
 
-import br.com.microservices.provider.models.Product;
+import br.com.alura.microservices.provider.models.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

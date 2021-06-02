@@ -1,4 +1,4 @@
-package br.com.microservices.provider.dtos;
+package br.com.alura.microservices.provider.dtos;
 
 import lombok.Data;
 

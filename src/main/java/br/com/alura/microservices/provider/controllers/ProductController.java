@@ -1,7 +1,7 @@
-package br.com.microservices.provider.controllers;
+package br.com.alura.microservices.provider.controllers;
 
-import br.com.microservices.provider.models.Product;
-import br.com.microservices.provider.services.ProductService;
+import br.com.alura.microservices.provider.models.Product;
+import br.com.alura.microservices.provider.services.ProductService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

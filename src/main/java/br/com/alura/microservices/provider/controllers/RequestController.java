@@ -1,8 +1,8 @@
-package br.com.microservices.provider.controllers;
+package br.com.alura.microservices.provider.controllers;
 
-import br.com.microservices.provider.dtos.RequestItemDTO;
-import br.com.microservices.provider.models.Request;
-import br.com.microservices.provider.services.RequestService;
+import br.com.alura.microservices.provider.dtos.RequestItemDTO;
+import br.com.alura.microservices.provider.models.Request;
+import br.com.alura.microservices.provider.services.RequestService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

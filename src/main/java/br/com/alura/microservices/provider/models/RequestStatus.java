@@ -1,4 +1,4 @@
-package br.com.microservices.provider.models;
+package br.com.alura.microservices.provider.models;
 
 public enum  RequestStatus {
     RECEIVED,

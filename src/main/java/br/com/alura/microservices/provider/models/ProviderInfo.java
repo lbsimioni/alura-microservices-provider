@@ -1,25 +1,24 @@
-package br.com.microservices.provider.models;
+package br.com.alura.microservices.provider.models;
 
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 @Entity
 @Data
-public class RequestItem {
+public class ProviderInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer amount;
+    private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "productId")
-    private Product product;
+    @Column(length = 2)
+    private String state;
+    private String address;
 }

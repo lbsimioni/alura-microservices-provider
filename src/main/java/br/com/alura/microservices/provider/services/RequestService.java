@@ -1,12 +1,12 @@
-package br.com.microservices.provider.services;
+package br.com.alura.microservices.provider.services;
 
-import br.com.microservices.provider.dtos.RequestItemDTO;
-import br.com.microservices.provider.exceptions.ResourceNotFoundException;
-import br.com.microservices.provider.models.Product;
-import br.com.microservices.provider.models.Request;
-import br.com.microservices.provider.models.RequestItem;
-import br.com.microservices.provider.models.RequestStatus;
-import br.com.microservices.provider.repositories.RequestRepository;
+import br.com.alura.microservices.provider.dtos.RequestItemDTO;
+import br.com.alura.microservices.provider.exceptions.ResourceNotFoundException;
+import br.com.alura.microservices.provider.models.Product;
+import br.com.alura.microservices.provider.models.Request;
+import br.com.alura.microservices.provider.models.RequestItem;
+import br.com.alura.microservices.provider.models.RequestStatus;
+import br.com.alura.microservices.provider.repositories.RequestRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

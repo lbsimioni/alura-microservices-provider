@@ -1,16 +1,16 @@
-package br.com.microservices.provider.models;
+package br.com.alura.microservices.provider.models;
 
 import lombok.Data;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.math.BigDecimal;
 
 @Entity
 @Data
-public class ProviderInfo {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,9 @@ public class ProviderInfo {
 
     private String name;
 
-    @Column(length = 2)
     private String state;
-    private String address;
+
+    private String description;
+
+    private BigDecimal price;
 }
