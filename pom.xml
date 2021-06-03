@@ -8,7 +8,7 @@
 		<version>2.4.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.microservices.provider</groupId>
+	<groupId>br.com.alura.microservices</groupId>
 	<artifactId>provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>provider</name>
@@ -60,6 +60,12 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

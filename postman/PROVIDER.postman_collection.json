@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "0ff770cc-1d4e-4580-bbd8-002979751981",
+		"name": "PROVIDER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[PROVIDER] Get Provider Info By State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{providerApi}}/info/GO",
+					"host": [
+						"{{providerApi}}"
+					],
+					"path": [
+						"info",
+						"GO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PROVIDER] Get Products By State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{providerApi}}/products/DF",
+					"host": [
+						"{{providerApi}}"
+					],
+					"path": [
+						"products",
+						"DF"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PROVIDER] Requests",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"amount\": 5\n    },\n    {\n        \"id\": 2,\n        \"amount\": 1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{providerApi}}/requests",
+					"host": [
+						"{{providerApi}}"
+					],
+					"path": [
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PROVIDER] Get Request By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{providerApi}}/requests/1",
+					"host": [
+						"{{providerApi}}"
+					],
+					"path": [
+						"requests",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
